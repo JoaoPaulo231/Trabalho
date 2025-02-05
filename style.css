@@ -1,0 +1,67 @@
+body{
+  width: 95%;
+background-color: rgb(79, 155, 89);
+}
+.logo{
+  display: flex;
+  justify-content: space-around;
+  font-size: 60px;
+}
+.no-break{
+  white-space: nowrap;
+}
+.nordeste, .paulista, .carioca{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  left: 500px;
+  border: 5px solid;
+  border-color: white;
+  width: 800px;
+  
+}
+
+
+
+.search-filter {
+  text-align: center;
+  margin: 20px;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+}
+
+a:hover {
+  color:#eeff00 ;
+}
+
+a:active {
+  color: rgb(15, 115, 182);
+}
+
+.add-game {
+  text-align: center;
+  margin: 20px;
+}
+
+.add-game input, .add-game button {
+  margin: 5px;
+}
+
+.new-games {
+  text-align: center;
+  margin: 20px;
+  font-size: 27px;
+}
+.new-games img{
+  width: 290px;
+}
+h1{
+  bottom: 2000px;
+}
