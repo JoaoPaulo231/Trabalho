@@ -1,0 +1,32 @@
+body{
+    background-color: rgb(73, 151, 97);
+    height: 100%;
+}
+.logo .second{
+   
+    float: inline-end;
+    position: relative;
+    bottom: 23rem
+    
+}
+
+.logo h1{
+    width: 150px;
+    position: relative;
+    bottom: 300px;
+    left: 878px;
+    border-radius: 2px;
+    background-color: #ffffff;
+    color: green;
+}
+.detalhes{
+        text-align: center;
+        position: relative;
+        left: 450px;
+        border: 10px white solid;
+        width: 1000px;
+}
+.text{
+    font-size: 27px;
+    
+}

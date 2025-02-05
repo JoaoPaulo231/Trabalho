@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BNBscore</title>
+    <style>
+        body {
+            background-color: rgb(73, 151, 97);
+            border: 2px solid;
+            color: white;
+            height: auto; /* Ajustado para altura automática */
+        }
+
+        .logo .second {
+            float: inline-end;
+            position: relative;
+            bottom: 388px;
+        }
+
+        .logo h1 {
+            width: 150px;
+            position: relative;
+            bottom: 300px;
+            left: 878px;
+            border: 2px solid;
+            background-color: #ffffff;
+            color: green;
+        }
+
+        .carioca, .nordeste, .paulista {
+            text-align: start;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            width: 200px;
+            margin: 50px;
+            color: #ffffff;
+        }
+
+        .carioca img, .nordeste img, .paulista img {
+            position: relative;
+            right: 60px;
+        }
+
+        .carioca h3, .nordeste h3, .paulista h3 {
+            position: relative;
+            right: 40px;
+            width: 290px;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: white;
+        }
+
+        a:hover {
+            color: blue;
+        }
+
+        a:active {
+            color: blue;
+        }
+
+        .search-filter {
+            text-align: center;
+            margin: 20px;
+        }
+
+        .add-game {
+            text-align: center;
+            margin: 20px;
+        }
+
+        .add-game input, .add-game button {
+            margin: 5px;
+        }
+
+        .new-games {
+            text-align: center;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="logo">
+            <header>
+                <img src="/Trabalho/img/Imagem do WhatsApp de 2025-02-01 à(s) 00.09.47_0a7de404.jpg" alt="oi" width="250px" height="300px">
+                <h1>BNBscore</h1>
+                <img class="second" src="/Trabalho/img/Imagem do WhatsApp de 2025-02-01 à(s) 00.09.47_0a7de404.jpg" alt="alo" width="250px" height="300px">
+            </header>
+        </div>
+
+        <!-- Área de Busca e Filtro -->
+        <div class="search-filter">
+            <input type="text" id="searchInput" placeholder="Buscar por nome do time...">
+            <select id="filterSelect">
+                <option value="all">Todos</option>
+                <option value="nordeste">Nordestão</option>
+                <option value="paulista">Paulistão</option>
+                <option value="carioca">Carioca</option>
+            </select>
+            <button onclick="filterGames()">Filtrar</button>
+        </div>
+
+        <!-- Conteúdo Existente -->
+        <div class="nordeste">
+            <header>
+                <h2>Nordestão</h2>
+                <img src="https://imgs.search.brave.com/jZJLe8ePeVXPQeIyRswtFS3D9cBOvdG8BG9QlA1bQJo/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvcHQvdGh1bWIv/MS8xOS9Db3BhTm9y/ZGVzdGUyMDE3LnBu/Zy81MTJweC1Db3Bh/Tm9yZGVzdGUyMDE3/LnBuZw" alt="" width="200px">
+                <div>
+                    <h2>Primeira Rodada</h2>
+                </div>
+                <div class="nordeste">
+                    <h3><a href="/T.Nordeste/csa.html">CSA 2 X 1 Confiança</a></h3>
+                    <img src="https://imgs.search.brave.com/Sl-Q4Rt_Pj1wcaX5mLjhzSfyzl1xTSxXMXmXrngx3ZU/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/bWcuc3VwZXJlc3Bv/cnRlcy5jb20uYnIv/YXBvc3Rhcy9hcHAv/dXBsb2Fkcy8yMDIz/LzA1L1NFLVBhbHBp/dGUtMTAucG5n" alt="csa" width="290px">
+                </div>
+                <!-- Outros jogos do Nordeste -->
+            </header>
+        </div>
+
+        <div class="paulista">
+            <header>
+                <h2>Paulistão</h2>
+                <img src="https://imgs.search.brave.com/wvyBZSh47LkoWiJbs5SwWqoJ0JfZxVpVpB8STCprwNE/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly95dDMu/Z29vZ2xldXNlcmNv/bnRlbnQuY29tLzJs/bWJrSVFBNEkxeWcw/bzh5eXdrUlh2Q0hH/RUVOdE5aVGNZZF9H/LUxka0NBZG44RmVW/UkxTQkZqdkZvT2t6/MnQ3UkhuU09rLT1z/OTAwLWMtay1jMHgw/M2ZmZmZmZi1uby1y/ag" alt="">
+                <h3>Primeira Rodada</h3>
+                <div class="paulista-jogo">
+                    <h3><a href="/T.Paulista/ae.html">AE Velo Clube 0 X 2 Noroeste</a></h3>
+                    <img src="https://imgs.search.brave.com/m5O8owj_ke8zRrN8rgMgiQuGUWVifWtxWFwBHjXay5s/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly93d3cu/ajFkaWFyaW8uY29t/LmJyL3dwLWNvbnRl/bnQvdXBsb2Fkcy8y/MDI0LzA0L1ZlbG8t/Q2x1YmUtZS1Ob3Jv/ZXN0ZS0xLTEuanBn" alt="" width="290px">
+                </div>
+                <!-- Outros jogos do Paulista -->
+            </header>
+        </div>
+
+        <div class="carioca">
+            <header>
+                <h2>Carioca</h2>
+                <img src="https://imgs.search.brave.com/ctpnKr9ZN7zzdcDTV5r3y4ll6HZ1iXaJ6DBVkTEEgOw/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvcHQvdGh1bWIv/My8zMC9DYXJpb2Nh/XzIwMjVfRkVSSi5q/cGcvNTEycHgtQ2Fy/aW9jYV8yMDI1X0ZF/UkouanBn" alt="" width="250px">
+                <div class="carioca">
+                    <h3><a href="/T.Carioca/botafogo.html">Botafogo 1 X 2 Maricá</a></h3>
+                    <img class="jogo" src="https://imgs.search.brave.com/4f9rzCgyPJpFuw4SSrePyH6GA9-AaFAAW14WSuIPPA4/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9jYXRy/YWNhbGl2cmUuY29t/LmJyL3dwLWNvbnRl/bnQvdXBsb2Fkcy8y/MDI1LzAxL2JvdGFm/b2dvLXgtbWFyaWNh/LW1lbGhvcmVzLW9k/ZHMtcGFyYS1hcG9z/dGFyLnBuZw" alt="" width="290px">
+                </div>
+                <!-- Outros jogos do Carioca -->
+            </header>
+        </div>
+
+        <!-- Área para Adicionar Novo Jogo -->
+        <div class="add-game">
+            <h2>Adicionar Novo Jogo</h2>
+            <input type="text" id="newGameName" placeholder="Nome do Jogo">
+            <input type="text" id="newGameResult" placeholder="Resultado">
+            <input type="file" id="newGameImage" accept="image/*">
+            <button onclick="addNewGame()">Adicionar Jogo</button>
+        </div>
+
+        <!-- Área para Exibir Novos Jogos Adicionados -->
+        <div class="new-games">
+            <h2>Novos Jogos Adicionados</h2>
+            <ul id="newGamesList"></ul>
+        </div>
+    </main>
+
+    <script>
+        // Função para filtrar os jogos
+        function filterGames() {
+            const searchText = document.getElementById('searchInput').value.toLowerCase();
+            const filterValue = document.getElementById('filterSelect').value;
+
+            const games = document.querySelectorAll('.nordeste, .paulista, .carioca');
+            games.forEach(game => {
+                const gameText = game.textContent.toLowerCase();
+                const gameCategory = game.classList.contains('nordeste') ? 'nordeste' :
+                                    game.classList.contains('paulista') ? 'paulista' :
+                                    'carioca';
+
+                if ((filterValue === 'all' || gameCategory === filterValue) && gameText.includes(searchText)) {
+                    game.style.display = 'block';
+                } else {
+                    game.style.display = 'none';
+                }
+            });
+        }
+
+        // Função para adicionar um novo jogo
+        function addNewGame() {
+            const gameName = document.getElementById('newGameName').value;
+            const gameResult = document.getElementById('newGameResult').value;
+            const gameImageInput = document.getElementById('newGameImage');
+
+            if (gameName && gameResult && gameImageInput.file.lengh > 0) {
+                const newGameItem = document.createElement('li');
+                newGameItem.textContent = ${gameName} - ${gameResult};
+                
+                const newGameImage = document.createElement('img');
+                const fileReader = new FileReader();
+                fileReader.onload = function(e) {
+                    newGameImage.src = e.target.result;
+                };
+                fileReader.readAsDataURL(gameImageInput.file[0]);
+
+                newGameItem.appendChild(newGameImage);
+                document.getElementById('newGamesList').appendChild(newGameItem);
+            
+                // Limpar os campos de entrada
+                document.getElementById('newGameName').value = '';
+                document.getElementById('newGameResult').value = '';
+                document.getElementById('newGamesImage').value = '';
+            } else {
+                alert('Por favor, preencha ambos os campos e selecione uma imagem.');
+            }
+        }
+    </script>
+</body>
+</html>
